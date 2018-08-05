@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google APIS CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Belleza|Cabin+Sketch|Dancing+Script|Flamenco|Fredoka+One|Gaegu|Julius+Sans+One|Lemon|Mallanna|Marvel|Montserrat+Subrayada|Overpass+Mono|Pompiere|Rubik+Mono+One|Russo+One|Sigmar+One|Tenor+Sans" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Favicon -->
+    <title>FoodMap</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+  </head>
+  <body>
+    <div class="splash-bg">
+      <h1 class="splash-logo" style="display: none">FOODMAP</h1>
+    </div>
+    <div class="content">
+      <!-- Header -->
+      <header class="header">
+        <h3 class="header-title">FOODMAP</h3>
+        <hr class="header-line">
+      </header>
+      <!-- Filtros -->
+      <div class="cuisines">
+        <button class="italian-food button-effect" type="text">italiana</button>
+        <button class="japanese-food button-effect" type="text">japonesa</button>
+        <button class="arabic-food button-effect" type="text">árabe</button>
+        <button class="vegan-food button-effect" type="text">vegana</button>
+        <button class="fast-food button-effect" type="text">fast food</button>
+      </div>
+      <!-- Busca -->
+      <div class="search-place">
+        <input class="search-input" type="text" placeholder="O que procura?"/>
+        <button class="search-button" type="text"><i class="fas fa-search search-icon"></i></button>
+      </div>
+      <!-- Mapa -->
+      <div class="map">
+        <div id="map"></div>  
+      </div>
+      <!-- Resultados -->
+      <h5 class="show-results">PERTO DE VOCÊ</h5>
+      <div class="results">
+
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade modal-box" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="modal-button-1 btn" data-dismiss="modal">X</button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-image"></div>
+            <div class="modal-description"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="modal-button-2 btn">FAZER PEDIDO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <!-- Google APIS JS -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB67ZYWC3nyyXlTCgNRFo-MdAWov1sD5Qs&callback=initMap">
+    </script>
+    <!-- Bootstrap Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"crossorigin="anonymous"></script>
+    <!-- Arquivo data -->
+    <script src="js/data.js"></script>
+    <!-- Arquivo JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
