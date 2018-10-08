@@ -5,7 +5,7 @@ A website that finds restaurants nearby.
 It was a challenge of the third sprint of Laboratoria bootcamp. The requirement was to create a site with a breakpoint of 576px where it would be possible to locate some specific restaurants located in the surrounds of Paulista Avenue, in São Paulo - SP, using Google's API. The restaurants suggested for this exercise were accessed through an internal database.
 
 ## Appearance
-![App map](./src/assets/foodmap.png)
+![App map](./assets/foodmap.png)
 
 ## Use
 For a better result, set your location to Banco Safra on Avenida Paulista, São Paulo - SP.
